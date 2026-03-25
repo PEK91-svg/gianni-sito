@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regali | NOI OUTLET</title>
+    <meta name="description" content="Idee regalo di lusso: set esclusivi, confezioni regalo e gift card NOI OUTLET.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <div class="page-hero">
+        <img src="images/prod5.jpg" alt="Regali">
+        <div class="page-hero-content">
+            <p>Idee Regalo Esclusive</p>
+            <h1>REGALI</h1>
+        </div>
+    </div>
+
+    <div class="filter-bar">
+        <div class="filter-bar-left">
+            <button class="filter-btn active">Tutti</button>
+            <button class="filter-btn">Sotto € 500</button>
+            <button class="filter-btn">€ 500 – € 1.000</button>
+            <button class="filter-btn">Oltre € 1.000</button>
+            <button class="filter-btn">Gift Card</button>
+        </div>
+        <div class="filter-bar-right">14 idee regalo</div>
+    </div>
+
+    <div class="products-grid">
+        <div class="product-item"><div class="product-item-img"><img src="images/prod1.jpg" alt="Set Fragranze"><span class="product-item-badge">Regalo</span><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">Set Fragranze Exclusive</p><p class="product-item-desc">Cofanetto 3 fragranze 30ml</p><div class="product-item-price"><span>€ 490</span></div></div></div>
+        <div class="product-item"><div class="product-item-img"><img src="images/prod2.jpg" alt="Gift Card"><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">Gift Card NOI OUTLET</p><p class="product-item-desc">Valore a scelta</p><div class="product-item-price"><span>da € 100</span></div></div></div>
+        <div class="product-item"><div class="product-item-img"><img src="images/prod3.jpg" alt="Set Cravatta e Gemelli"><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">Set Cravatta + Gemelli</p><p class="product-item-desc">Seta e Argento Sterling</p><div class="product-item-price"><span>€ 650</span></div></div></div>
+        <div class="product-item"><div class="product-item-img"><img src="images/prod4.jpg" alt="Portafoglio Lusso"><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">Portafoglio di Lusso</p><p class="product-item-desc">Coccodrillo e Oro giallo</p><div class="product-item-price"><span>€ 1.800</span></div></div></div>
+    </div>
+
+    <div id="site-footer"></div>
+    <script src="components.js"></script>
+    <script>document.querySelectorAll('.filter-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');});});</script>
+</body>
+</html>

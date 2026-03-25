@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrello | NOI OUTLET</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <div class="page-container">
+        <h1 class="page-title">IL TUO CARRELLO</h1>
+
+        <div id="cartContent">
+            <!-- Populated with items or empty message -->
+        </div>
+    </div>
+
+    <div id="site-footer"></div>
+    <script src="components.js"></script>
+    <script>
+        const cartContent = document.getElementById('cartContent');
+
+        // Simulate a cart with 2 items for demo purposes
+        const demoItems = [
+            { name: 'Giacca Doppio Petto', desc: 'Taglia 50 / Grigio Antracite', price: '€ 2.850', img: 'images/srv1.jpg' },
+            { name: 'Loafer Nero', desc: 'Taglia 43 / Suede Nero', price: '€ 750', img: 'images/prod2.jpg' },
+        ];
+
+        function renderCart() {
+            if (demoItems.length === 0) {
+                cartContent.innerHTML = `
+                    <div style="text-align:center;padding:80px 0;color:#888;">
+                        <i class="ph ph-tote" style="font-size:52px;display:block;margin-bottom:20px;"></i>
+                        <p style="font-size:15px;margin-bottom:24px;">Il tuo carrello è vuoto.</p>
+                        <a href="nuovi-arrivi.html" class="btn-primary" style="width:auto;display:inline-block;padding:16px 48px;">ESPLORA I PRODOTTI</a>
+                    </div>`;
+                return;
+            }
+            const subtotal = '€ 3.600';
+            const html = `
+                <div class="cart-layout">
+                    <div class="cart-items">
+                        ${demoItems.map((item, i) => `
+                        <div class="cart-item">
+                            <img src="${item.img}" alt="${item.name}">
+                            <div>
+                                <p class="cart-item-name">${item.name}</p>
+                                <p class="cart-item-detail">${item.desc}</p>
+                                <p class="cart-item-detail" style="margin-top:4px;">${item.price}</p>
+                                <div class="cart-item-qty">
+                                    <button onclick="changeQty(${i}, -1)">−</button>
+                                    <span id="qty-${i}">1</span>
+                                    <button onclick="changeQty(${i}, 1)">+</button>
+                                </div>
+                                <span class="cart-item-remove" onclick="removeItem(${i})">Rimuovi</span>
+                            </div>
+                            <div style="font-weight:600;font-size:14px;">${item.price}</div>
+                        </div>`).join('')}
+                    </div>
+                    <div class="cart-summary">
+                        <h2>RIEPILOGO ORDINE</h2>
+                        <div class="cart-summary-row"><span>Subtotale</span><span>${subtotal}</span></div>
+                        <div class="cart-summary-row"><span>Spedizione</span><span>Gratuita</span></div>
+                        <div class="cart-summary-row"><span>Tasse incluse</span><span>✓</span></div>
+                        <div class="cart-summary-row total"><span>TOTALE</span><span>${subtotal}</span></div>
+                        <a href="#" class="btn-primary" onclick="alert('Pagamento in corso... (demo)')">PROCEDI AL PAGAMENTO</a>
+                        <a href="nuovi-arrivi.html" class="btn-secondary">CONTINUA LO SHOPPING</a>
+                    </div>
+                </div>`;
+            cartContent.innerHTML = html;
+        }
+
+        function removeItem(i) {
+            demoItems.splice(i, 1);
+            renderCart();
+            const badge = document.querySelector('.cart-badge');
+            if (badge) badge.textContent = Math.max(0, parseInt(badge.textContent) - 1);
+        }
+
+        function changeQty(i, delta) {
+            const el = document.getElementById(`qty-${i}`);
+            if (!el) return;
+            let q = parseInt(el.textContent) + delta;
+            if (q < 1) q = 1;
+            el.textContent = q;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderCart();
+            const badge = document.querySelector('.cart-badge');
+            if (badge) badge.textContent = demoItems.length;
+        });
+    </script>
+</body>
+</html>

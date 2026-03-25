@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Account | NOI OUTLET</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <div class="page-container">
+        <h1 class="page-title">IL MIO ACCOUNT</h1>
+        <div class="account-grid">
+            <nav class="account-sidebar">
+                <a href="#profilo" class="active">Profilo</a>
+                <a href="#ordini">I miei Ordini</a>
+                <a href="#' indirizzi">Indirizzi</a>
+                <a href="#wishlist">Wishlist</a>
+                <a href="#appuntamenti">Appuntamenti</a>
+                <a href="#" onclick="alert('Disconnesso!')">Esci</a>
+            </nav>
+            <div class="account-section" id="profilo">
+                <h2>Dati Personali</h2>
+                <form onsubmit="event.preventDefault();alert('Modifiche salvate!')">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+                        <div class="form-group">
+                            <label>Nome</label>
+                            <input type="text" placeholder="Mario" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>Cognome</label>
+                            <input type="text" placeholder="Rossi" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="mario.rossi@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Telefono</label>
+                        <input type="tel" placeholder="+39 000 0000000">
+                    </div>
+                    <div class="form-group">
+                        <label>Nuova Password</label>
+                        <input type="password" placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="btn-primary" style="width:auto;padding:16px 48px;">SALVA MODIFICHE</button>
+                </form>
+
+                <div style="margin-top:48px;" id="ordini">
+                    <h2>I miei Ordini</h2>
+                    <p style="color:#888;font-size:14px;margin-top:16px;">Nessun ordine ancora. <a href="nuovi-arrivi.html" style="text-decoration:underline;">Inizia a fare shopping →</a></p>
+                </div>
+
+                <div style="margin-top:48px;" id="appuntamenti">
+                    <h2>Prenota un Appuntamento</h2>
+                    <p style="color:#555;font-size:14px;margin-top:12px;margin-bottom:24px;">Scegli il servizio e la data che preferisci. Un consulente ti contatterà per confermare.</p>
+                    <form onsubmit="event.preventDefault();alert('Richiesta inviata! Ti contatteremo presto.')">
+                        <div class="form-group">
+                            <label>Tipo di Appuntamento</label>
+                            <select style="width:100%;padding:14px 16px;border:1px solid #e0e0e0;font-family:var(--font-sans);font-size:14px;outline:none;">
+                                <option>Consulenza Su Misura</option>
+                                <option>Personal Shopping</option>
+                                <option>Sessione di Styling</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Data Preferita</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group">
+                            <label>Note (opzionale)</label>
+                            <input type="text" placeholder="Eventuali richieste speciali...">
+                        </div>
+                        <button type="submit" class="btn-primary" style="width:auto;padding:16px 48px;">INVIA RICHIESTA</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="site-footer"></div>
+    <script src="components.js"></script>
+</body>
+</html>

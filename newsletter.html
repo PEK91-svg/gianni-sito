@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter | NOI OUTLET</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .nl-hero { min-height: 60vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding: 80px 40px; }
+        .nl-hero h1 { font-family: var(--font-serif); font-size: clamp(36px,5vw,60px); font-weight:400; margin-bottom:20px; letter-spacing:2px; }
+        .nl-hero p { font-size:14px; color:#555; max-width:520px; line-height:1.9; margin-bottom:48px; }
+        .nl-form { display:flex; flex-direction:column; gap:16px; width:100%; max-width:460px; }
+        .nl-form input { padding:15px 20px; border:1px solid #ccc; font-family:var(--font-sans); font-size:14px; outline:none; transition: border-color .3s; }
+        .nl-form input:focus { border-color:#000; }
+        .nl-form .btn-primary { padding:18px; }
+        .nl-perks { display:grid; grid-template-columns: repeat(3,1fr); gap:40px; padding: 60px 80px; border-top:1px solid #eee; text-align:center; }
+        .nl-perk-icon { font-size:36px; margin-bottom:14px; }
+        .nl-perk h3 { font-size:12px; letter-spacing:1px; text-transform:uppercase; margin-bottom:10px; }
+        .nl-perk p { font-size:13px; color:#666; line-height:1.7; }
+        @media(max-width:768px){.nl-perks{grid-template-columns:1fr;padding:40px 24px;}.nl-hero{padding:60px 24px;}}
+    </style>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <div class="nl-hero">
+        <h1>Entra nel Nostro Mondo</h1>
+        <p>Iscriviti alla newsletter NOI OUTLET e ricevi in anteprima tutte le novità della stagione, le offerte esclusive riservate ai membri e gli inviti agli eventi privati in boutique.</p>
+        <form class="nl-form" onsubmit="handleSub(event)">
+            <input type="text" placeholder="Nome" required id="nlName">
+            <input type="email" placeholder="Indirizzo e-mail" required id="nlEmail">
+            <button type="submit" class="btn-primary">ISCRIVITI GRATUITAMENTE</button>
+        </form>
+        <p id="nlSuccess" style="display:none;margin-top:24px;font-size:14px;color:#2e7d32;font-weight:500;">✓ Iscrizione confermata! Benvenuto nel nostro mondo.</p>
+    </div>
+
+    <div class="nl-perks">
+        <div class="nl-perk"><div class="nl-perk-icon"><i class="ph ph-gift"></i></div><h3>Offerte Esclusive</h3><p>Accedi a sconti e promozioni riservati solo agli iscritti della newsletter.</p></div>
+        <div class="nl-perk"><div class="nl-perk-icon"><i class="ph ph-star"></i></div><h3>Anteprime Collezioni</h3><p>Scopri le nuove collezioni prima del lancio ufficiale con accesso anticipato.</p></div>
+        <div class="nl-perk"><div class="nl-perk-icon"><i class="ph ph-calendar-check"></i></div><h3>Inviti Esclusivi</h3><p>Ricevi inviti personali agli eventi privati e alle aperture speciali in boutique.</p></div>
+    </div>
+
+    <div id="site-footer"></div>
+    <script src="components.js"></script>
+    <script>
+        function handleSub(e) {
+            e.preventDefault();
+            document.querySelector('.nl-form').style.display = 'none';
+            document.getElementById('nlSuccess').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

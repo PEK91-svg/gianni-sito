@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profumi | NOI OUTLET</title>
+    <meta name="description" content="Fragranze esclusive NOI OUTLET: scopri l'universo olfattivo tra note legnose, speziate e floreali.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <div class="page-hero">
+        <img src="images/prod1.jpg" alt="Fragranze">
+        <div class="page-hero-content">
+            <p>L'Universo Olfattivo</p>
+            <h1>FRAGRANZE</h1>
+        </div>
+    </div>
+
+    <div class="filter-bar">
+        <div class="filter-bar-left">
+            <button class="filter-btn active">Tutte</button>
+            <button class="filter-btn">Legnoso</button>
+            <button class="filter-btn">Fresco</button>
+            <button class="filter-btn">Speziato</button>
+        </div>
+        <div class="filter-bar-right">5 fragranze</div>
+    </div>
+
+    <div class="products-grid">
+        <div class="product-item"><div class="product-item-img"><img src="images/prod1.jpg" alt="Il Sottobosco"><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">Il Sottobosco</p><p class="product-item-desc">Note di Cedro, Muschio e Vetiver — 100ml</p><div class="product-item-price"><span>€ 320</span></div></div></div>
+        <div class="product-item"><div class="product-item-img"><img src="images/prod2.jpg" alt="Il Lanificio"><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">Il Lanificio</p><p class="product-item-desc">Note di Incenso, Lana e Ambra — 100ml</p><div class="product-item-price"><span>€ 320</span></div></div></div>
+        <div class="product-item"><div class="product-item-img"><img src="images/prod3.jpg" alt="La Panoramica"><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">La Panoramica</p><p class="product-item-desc">Note di Bergamotto, Rosa e Legni — 100ml</p><div class="product-item-price"><span>€ 340</span></div></div></div>
+        <div class="product-item"><div class="product-item-img"><img src="images/prod4.jpg" alt="A Trivero"><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">A Trivero</p><p class="product-item-desc">Note di Pepe, Cardamomo e Muschio — 100ml</p><div class="product-item-price"><span>€ 320</span></div></div></div>
+        <div class="product-item"><div class="product-item-img"><img src="images/prod5.jpg" alt="Saga del Piemonte"><span class="product-item-badge">Esclusivo</span><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">Saga del Piemonte</p><p class="product-item-desc">Note di Nocciola, Resina e Vaniglia — 100ml</p><div class="product-item-price"><span>€ 360</span></div></div></div>
+    </div>
+
+    <div id="site-footer"></div>
+    <script src="components.js"></script>
+    <script>document.querySelectorAll('.filter-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');});});</script>
+</body>
+</html>

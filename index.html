@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noi Outlet — Moda di Brand, Prezzi Outlet. Riesi & Modica, Sicilia.</title>
+    <meta name="description" content="Noi Outlet, l'outlet multimarca di moda italiana in Sicilia. Pinko, Twinset e altri brand. Sconti fino al 70% tutto l'anno. Riesi (CL) e Modica (RG). Il Buono Acquisto per il territorio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+    Sconti fino al 70% tutto l'anno &ensp;—&ensp; <a href="#buono">Scopri il Buono Acquisto</a> &ensp;—&ensp; Nuovi arrivi ogni settimana
+</div>
+
+<!-- NAV -->
+<nav class="site-nav" id="siteNav">
+    <div class="nav-inner">
+        <a href="#scopri" class="nav-logo">Noi Outlet</a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#scopri"     data-section="scopri">Scopri</a>
+            <a href="#noi-outlet" data-section="noi-outlet">Chi Siamo</a>
+            <a href="#solidali"   data-section="solidali">Solidali</a>
+            <a href="#buono"      data-section="buono">Buono Acquisto</a>
+            <a href="#servizi"    data-section="servizi">Servizi</a>
+        </div>
+
+        <div class="nav-utils">
+            <a href="https://instagram.com/riesioutlet" target="_blank">Instagram</a>
+            <a href="tel:+393276933691" class="nav-contact">Contattaci</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+        <span class="nav-logo">Noi Outlet</span>
+        <button class="mobile-nav-close" id="mobileClose">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+        <a href="#scopri">Scopri di Più</a>
+        <a href="#noi-outlet">Chi Siamo</a>
+        <a href="#solidali">Solidali</a>
+        <a href="#buono">Buono Acquisto</a>
+        <a href="#servizi">Servizi &amp; Eventi</a>
+        <a href="https://instagram.com/riesioutlet" target="_blank">Instagram</a>
+        <a href="tel:+393276933691">+39 327 693 3691</a>
+    </div>
+</nav>
+
+<!-- ==================== HERO SLIDER ==================== -->
+<section id="scopri" class="hero-slider" aria-label="Hero">
+
+    <!-- Slide 1 -->
+    <div class="hero-slide active" data-slide="0">
+        <img src="images/hero1.jpg" alt="Noi Outlet — Uomo">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-eyebrow">Nuova Collezione &mdash; Primavera 2026</span>
+                <h1 class="hero-title">Noi<br><em>Outlet</em></h1>
+                <p class="hero-tagline">Compri da noi, investi nel territorio.</p>
+                <div class="hero-ctas">
+                    <a href="#noi-outlet" class="btn btn-light">Scopri i Negozi</a>
+                    <span class="hero-divider" aria-hidden="true"></span>
+                    <a href="#buono" class="text-link" style="color:rgba(255,255,255,0.7); border-color:rgba(255,255,255,0.4);">Il Buono Acquisto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hero-slide" data-slide="1">
+        <img src="images/hero2.jpg" alt="Noi Outlet — Eccellenza italiana" style="object-position: center 20%;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-eyebrow">Brand Italiani &mdash; Sconti fino al 70%</span>
+                <h1 class="hero-title">Stile<br><em>Italiano</em></h1>
+                <p class="hero-tagline">Pinko, Twinset e i migliori brand a prezzi outlet.</p>
+                <div class="hero-ctas">
+                    <a href="#noi-outlet" class="btn btn-light">Esplora i Brand</a>
+                    <span class="hero-divider" aria-hidden="true"></span>
+                    <a href="tel:+393276933691" class="text-link" style="color:rgba(255,255,255,0.7); border-color:rgba(255,255,255,0.4);">+39 327 693 3691</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="hero-dots" role="tablist" aria-label="Scorri le immagini">
+        <button class="hero-dot active" data-target="0" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+        <button class="hero-dot"        data-target="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+    </div>
+    <div class="hero-counter" aria-hidden="true">01 / 02</div>
+</section>
+
+<!-- ==================== TERRITORY EDITORIAL ==================== -->
+<div class="editorial-split">
+    <div class="editorial-text">
+        <span class="eyebrow">Il Nostro Territorio</span>
+        <h2 class="display-title">Radicati<br>in <em>Sicilia</em>.</h2>
+        <p class="body-text" style="margin-top:20px;">Due punti vendita, un unico progetto solidale. Serviamo la Sicilia centrale e sud-orientale con un circuito che coinvolge i comuni del nisseno e dell'ibleano.</p>
+        <div class="map-communes">
+            <span class="commune-chip active">Riesi</span>
+            <span class="commune-chip active">Mazzarino</span>
+            <span class="commune-chip">Butera</span>
+            <span class="commune-chip">Sommatino</span>
+            <span class="commune-chip">Delia</span>
+            <span class="commune-chip">Barrafranca</span>
+            <span class="commune-chip" style="border-color:var(--accent); color:var(--accent);">Modica — presto</span>
+        </div>
+        <a href="#solidali" class="text-link" style="margin-top:36px;">Il progetto circolare</a>
+    </div>
+    <div class="editorial-visual" style="background: #191919;">
+        <div style="position: relative; width: 100%; max-width: 800px; margin: 0 auto;">
+            <img src="images/mappa_sicilia.png" alt="Mappa Negozi Noi Outlet in Sicilia" style="width: 100%; height: auto; display: block;">
+            
+            <!-- Link Invisibili per Riesi e Modica -->
+            <!-- Area stimata Riesi centrale -->
+            <a href="#store-riesi" style="position: absolute; top: 35%; left: 40%; width: 25%; height: 25%; z-index: 10; cursor: pointer; display: block;" aria-label="Negozio Riesi"></a>
+            
+            <!-- Area stimata Modica sud-est -->
+            <a href="#store-modica" style="position: absolute; top: 65%; left: 60%; width: 25%; height: 25%; z-index: 10; cursor: pointer; display: block;" aria-label="Negozio Modica"></a>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== CHI SIAMO ==================== -->
+<section id="noi-outlet">
+    <div class="section-inner">
+        <div class="section-header">
+            <div>
+                <span class="eyebrow">I Nostri Negozi</span>
+                <h2 class="display-title">Più di un<br><em>negozio</em>.</h2>
+            </div>
+            <div class="section-header-right">
+                <p class="body-text" style="text-align:right;">Brand italiani del calibro di <strong style="font-weight:500; color:var(--black);">Pinko</strong> e <strong style="font-weight:500; color:var(--black);">Twinset</strong>, sconti fino al 70%, nuovi arrivi ogni settimana. E un progetto di economia circolare radicato nel territorio siciliano.</p>
+            </div>
+        </div>
+
+        <div class="stores-grid fade-up">
+            <!-- Riesi -->
+            <div class="store-card" id="store-riesi">
+                <div class="store-img-wrap">
+                    <img src="images/store_riesi.jpg" alt="Riesi Outlet — interno">
+                </div>
+                <div class="store-card-body">
+                    <div class="store-status">Aperto</div>
+                    <h3 class="store-name">Riesi Outlet</h3>
+                    <p class="store-address">Via Liborio Ministeri 23<br>93016 Riesi (CL), Sicilia</p>
+                    <p class="store-hours">Aperto tutti i giorni</p>
+                    <div class="store-actions">
+                        <a href="https://maps.google.com/?q=Via+Liborio+Ministeri+23+Riesi" target="_blank" class="btn btn-outline" style="padding:11px 24px; font-size:9px;">Indicazioni</a>
+                        <a href="tel:+393276933691" class="btn btn-dark" style="padding:11px 24px; font-size:9px;">Chiama</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Modica -->
+            <div class="store-card" id="store-modica">
+                <div class="store-img-wrap">
+                    <img src="images/store_modica.jpg" alt="Modica Outlet — interno">
+                </div>
+                <div class="store-card-body">
+                    <div class="store-status coming">In Apertura</div>
+                    <h3 class="store-name">Modica Outlet</h3>
+                    <p class="store-address">Modica (RG), Sicilia<br><span style="font-style:italic; color:var(--text-light); font-size:11px;">Indirizzo in definizione</span></p>
+                    <p class="store-hours">Apertura prossimamente</p>
+                    <div class="store-actions">
+                        <a href="tel:+393276933691" class="btn btn-outline" style="padding:11px 24px; font-size:9px;">Richiedere aggiornamenti</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brands -->
+        <div class="brands-wrap fade-up">
+            <span class="eyebrow">Brand disponibili</span>
+            <div class="brands-row">
+                <div class="brand-cell">Pinko</div>
+                <div class="brand-cell">Twinset</div>
+                <div class="brand-cell">Liu &middot; Jo</div>
+                <div class="brand-cell">Guess</div>
+                <div class="brand-cell">Fracomina</div>
+                <div class="brand-cell">Kontatto</div>
+                <div class="brand-cell">+ altri</div>
+            </div>
+        </div>
+
+        <!-- Contacts -->
+        <div class="contacts-strip fade-up">
+            <div class="contact-cell">
+                <span class="contact-label">Telefono</span>
+                <a href="tel:+393276933691" class="contact-value">+39 327 693 3691</a>
+            </div>
+            <div class="contact-cell">
+                <span class="contact-label">Email</span>
+                <a href="mailto:mercaticolaiannioutletig@gmail.com" class="contact-value" style="font-size:11px; letter-spacing:0;">mercaticolaiannioutletig<br>@gmail.com</a>
+            </div>
+            <div class="contact-cell">
+                <span class="contact-label">Instagram</span>
+                <a href="https://instagram.com/riesioutlet" target="_blank" class="contact-value">@riesioutlet</a>
+            </div>
+            <div class="contact-cell">
+                <span class="contact-label">Facebook</span>
+                <a href="https://www.facebook.com/p/Riesi-Outlet-61584522069517/" target="_blank" class="contact-value">Riesi Outlet</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SOLIDALI ==================== -->
+<section id="solidali">
+    <div class="section-inner">
+        <div style="text-align:center; max-width:580px; margin:0 auto;">
+            <span class="eyebrow">Economia Circolare</span>
+            <h2 class="display-title">Ogni acquisto<br>resta in <em>Sicilia</em>.</h2>
+            <p class="body-text" style="margin:20px auto 0; text-align:center; max-width:480px;">Il 20% della spesa torna come Buono Acquisto spendibile nell'economia locale. Un circolo virtuoso che fa crescere il territorio.</p>
+        </div>
+
+        <div class="circular-grid fade-up">
+            <div class="circ-cell">
+                <span class="circ-number">1</span>
+                <h3>Acquisti</h3>
+                <p>Scegli i tuoi capi preferiti da Noi Outlet a prezzi outlet.</p>
+            </div>
+            <div class="circ-cell">
+                <span class="circ-number">2</span>
+                <h3>Ricevi il 20%</h3>
+                <p>Il 20% della spesa diventa Buono Acquisto immediato.</p>
+            </div>
+            <div class="circ-cell">
+                <span class="circ-number">3</span>
+                <h3>Spendi Locale</h3>
+                <p>Usi il buono nei negozi e ristoranti convenzionati del territorio.</p>
+            </div>
+            <div class="circ-cell">
+                <span class="circ-number">4</span>
+                <h3>Il Territorio Cresce</h3>
+                <p>La ricchezza rimane in Sicilia, sostenendo l'economia locale.</p>
+            </div>
+        </div>
+
+        <table class="comuni-table fade-up">
+            <thead>
+                <tr>
+                    <th>Comune</th>
+                    <th>Provincia</th>
+                    <th>Stato</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Riesi</strong></td><td>Caltanissetta</td><td><span class="status-tag active">Attivo — Sede Outlet</span></td></tr>
+                <tr><td><strong>Mazzarino</strong></td><td>Caltanissetta</td><td><span class="status-tag active">Attivo</span></td></tr>
+                <tr><td>Butera</td><td>Caltanissetta</td><td><span class="status-tag soon">In attivazione</span></td></tr>
+                <tr><td>Sommatino</td><td>Caltanissetta</td><td><span class="status-tag soon">In attivazione</span></td></tr>
+                <tr><td>Delia</td><td>Caltanissetta</td><td><span class="status-tag soon">In attivazione</span></td></tr>
+                <tr><td>Barrafranca</td><td>Enna</td><td><span class="status-tag soon">In attivazione</span></td></tr>
+                <tr><td style="color:var(--accent);">Modica</td><td>Ragusa</td><td><span class="status-tag soon">In apertura</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ==================== BUONO ACQUISTO ==================== -->
+<section id="buono">
+    <div class="section-inner">
+        <div style="max-width:560px;">
+            <span class="eyebrow">Il Buono Acquisto</span>
+            <h2 class="display-title">Risparmi<br>sulla <em>moda</em>.</h2>
+            <p class="body-text" style="margin-top:20px;">Non è una carta fedeltà. È uno strumento di economia circolare che collega il risparmio sulla moda al sostegno dell'economia locale siciliana.</p>
+        </div>
+
+        <div class="steps-strip fade-up">
+            <div class="step-cell">
+                <span class="step-num">1</span>
+                <h3>Acquisti da Noi Outlet</h3>
+                <p>Scegli tra Pinko, Twinset e tanti altri brand già scontati fino al 70%.</p>
+            </div>
+            <div class="step-cell">
+                <span class="step-num">2</span>
+                <h3>Ricevi il Buono</h3>
+                <p>Il 20% della tua spesa ti viene restituito come Buono Acquisto da usare sul territorio.</p>
+            </div>
+            <div class="step-cell">
+                <span class="step-num">3</span>
+                <h3>Spendi dai Convenzionati</h3>
+                <p>Usa il buono in ristoranti, bar e negozi locali. Identificati dal marchio Noi Outlet.</p>
+            </div>
+        </div>
+
+        <div class="buono-example fade-up">
+            <span class="eyebrow eyebrow-accent" style="display:block; text-align:center; margin-bottom:12px;">Esempio Pratico</span>
+            <p class="body-text" style="text-align:center; margin:0 auto 0; max-width:440px; font-size:13px;">Ecco come funziona nella pratica:</p>
+            <div class="buono-calc">
+                <div class="calc-box">
+                    <span class="calc-amount">&euro;&nbsp;100</span>
+                    <span class="calc-label">Spendi da Noi Outlet</span>
+                </div>
+                <span class="calc-arrow">&rarr;</span>
+                <div class="calc-box">
+                    <span class="calc-amount highlight">&euro;&nbsp;20</span>
+                    <span class="calc-label">Ricevi come Buono</span>
+                </div>
+                <span class="calc-arrow">&rarr;</span>
+                <div class="calc-box">
+                    <span class="calc-amount" style="font-size:28px; line-height:1.4;">Ristorante<br>locale</span>
+                    <span class="calc-label">Sei libero di scegliere</span>
+                </div>
+            </div>
+            <p style="font-size:11px; color:var(--text-light); letter-spacing:.5px; text-align:center;">Benefici cumulabili con gli sconti già applicati sui capi.</p>
+        </div>
+
+        <!-- Convenzionati -->
+        <div style="margin-bottom:24px;">
+            <span class="eyebrow">Aziende Convenzionate</span>
+            <p class="body-text" style="font-size:12px;">Il network cresce ogni settimana. <a href="tel:+393276933691" style="color:var(--accent); border-bottom:1px solid var(--accent); padding-bottom:1px;">Contattaci per aderire.</a></p>
+        </div>
+        <div class="partners-grid fade-up">
+            <div class="partner-cell">
+                <span class="partner-category">Ristorazione</span>
+                <p class="partner-name">Trattoria da Pino</p>
+                <p class="partner-comune">Riesi (CL)</p>
+            </div>
+            <div class="partner-cell">
+                <span class="partner-category">Bar &amp; Caffè</span>
+                <p class="partner-name">Bar Centrale</p>
+                <p class="partner-comune">Mazzarino (CL)</p>
+            </div>
+            <div class="partner-cell">
+                <span class="partner-category">Servizi Professionali</span>
+                <p class="partner-name">Studio Fotografico Sole</p>
+                <p class="partner-comune">Riesi (CL)</p>
+            </div>
+            <div class="partner-cell dashed">
+                <span class="partner-category">Il tuo spazio</span>
+                <p class="partner-name" style="color:var(--text-mid); font-size:15px;">La tua azienda?</p>
+                <a href="tel:+393276933691" class="text-link" style="font-size:9px; margin-top:8px;">Richiedere informazioni</a>
+            </div>
+            <div class="partner-cell dashed" style="opacity:.6;">
+                <span class="partner-category">Prossimamente</span>
+                <p class="partner-name" style="color:var(--text-mid); font-size:15px;">Nuovo partner</p>
+                <p class="partner-comune">Territorio ibleo</p>
+            </div>
+            <div class="partner-cell dashed" style="opacity:.45;">
+                <span class="partner-category">Network in espansione</span>
+                <p class="partner-name" style="color:var(--text-mid); font-size:15px;">Nuovi ogni mese</p>
+                <p class="partner-comune">Tutta la Sicilia</p>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq-wrap">
+            <div class="faq-title-row">
+                <span class="eyebrow">Domande Frequenti</span>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">Il Buono ha una scadenza?<span class="faq-plus">+</span></button>
+                <div class="faq-a">Il Buono Acquisto ha validità di 30 giorni dalla data di emissione.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">Posso cumulare più Buoni?<span class="faq-plus">+</span></button>
+                <div class="faq-a">Sì, puoi accumulare Buoni da acquisti diversi e usarli insieme presso un convenzionato.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">Come ricevo il Buono?<span class="faq-plus">+</span></button>
+                <div class="faq-a">Al momento dell'acquisto in negozio ti vengono rilasciati il tagliando fisico e la ricevuta. La versione digitale è in arrivo.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q">Chi sono i convenzionati?<span class="faq-plus">+</span></button>
+                <div class="faq-a">Ristoranti, bar, negozi e studi professionali del territorio che hanno scelto di aderire al progetto. Il network cresce ogni settimana.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== SERVIZI ==================== -->
+<section id="servizi">
+    <div class="section-inner">
+        <div style="text-align:center; max-width:540px; margin:0 auto;">
+            <span class="eyebrow">Servizi &amp; Comunità</span>
+            <h2 class="display-title">Un punto<br>di <em>incontro</em>.</h2>
+            <p class="body-text" style="margin:20px auto 0; text-align:center;">Noi Outlet è un hub per la comunità siciliana: eventi, collaborazioni con il territorio, nuovi arrivi ogni settimana.</p>
+        </div>
+
+        <div class="services-grid fade-up">
+            <div class="service-cell">
+                <h3>Offerte Esclusive</h3>
+                <p>Disponibili per tutta la nostra community. Iscriviti per ricevere anteprime sulle nuove collezioni e offerte flash riservate.</p>
+            </div>
+            <div class="service-cell">
+                <h3>Nuovi Arrivi Settimanali</h3>
+                <p>Ogni settimana selezioniamo nuovi capi di brand italiani. Seguici su Instagram per essere sempre aggiornato.</p>
+            </div>
+            <div class="service-cell">
+                <h3>Convenzionamento Aziende</h3>
+                <p>Sei un'impresa locale? Entra nella rete dei convenzionati e ricevi clienti dal circuito Noi Outlet. Contattaci.</p>
+            </div>
+        </div>
+
+        <!-- Event feature -->
+        <div class="event-feature fade-up">
+            <div class="event-content">
+                <span class="eyebrow eyebrow-accent">Evento in Evidenza</span>
+                <h3 class="event-title-large">Aperitivo<br><em>di Pasqua</em></h3>
+                <div class="event-meta">
+                    <span class="event-meta-item">Venerdì 27 Marzo 2026</span>
+                    <span class="event-meta-item" style="color:var(--stone-dark)">|</span>
+                    <span class="event-meta-item">Ore 19:00</span>
+                    <span class="event-meta-item" style="color:var(--stone-dark)">|</span>
+                    <span class="event-meta-item">Riesi — Punto Vendita</span>
+                    <span class="event-meta-item" style="color:var(--stone-dark)">|</span>
+                    <span class="event-meta-item">DJ Set</span>
+                </div>
+                <p style="font-size:13px; font-weight:300; color:var(--text-mid); margin-bottom:36px; max-width:420px; line-height:1.9;">Un aperitivo speciale per festeggiare la Pasqua insieme alla nostra comunità. Brindisi, musica e offerte dedicate per tutti i partecipanti.</p>
+                <div class="event-ctas">
+                    <a href="tel:+393276933691" class="btn btn-dark">Prenota il Tuo Posto</a>
+                    <a href="https://instagram.com/riesioutlet" target="_blank" class="btn btn-outline">Segui su Instagram</a>
+                </div>
+            </div>
+            <div class="event-date-panel">
+                <span class="event-day">27</span>
+                <span class="event-month">Marzo 2026</span>
+                <span class="event-time">Ore 19:00</span>
+            </div>
+        </div>
+
+        <!-- Newsletter CTA -->
+        <div class="newsletter-block">
+            <h3>Non perderti niente.</h3>
+            <p>Offerte esclusive, nuovi arrivi e inviti agli eventi — direttamente a te.</p>
+            <a href="tel:+393276933691" class="btn btn-light">Contattaci ora</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <span class="footer-logo">Noi Outlet</span>
+            <p>Outlet multimarca di abbigliamento uomo e donna in Sicilia. Brand italiani con sconti fino al 70%. Riesi (CL) e Modica (RG).</p>
+            <div class="footer-socials">
+                <a href="https://instagram.com/riesioutlet" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/p/Riesi-Outlet-61584522069517/" target="_blank">Facebook</a>
+                <a href="tel:+393276933691">+39 327 693 3691</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Sezioni</h3>
+            <ul>
+                <li><a href="#scopri">Scopri di Più</a></li>
+                <li><a href="#noi-outlet">Chi Siamo</a></li>
+                <li><a href="#solidali">Solidali</a></li>
+                <li><a href="#buono">Buono Acquisto</a></li>
+                <li><a href="#servizi">Servizi &amp; Eventi</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Punti Vendita</h3>
+            <ul>
+                <li><a href="https://maps.google.com/?q=Via+Liborio+Ministeri+23+Riesi" target="_blank">Riesi &mdash; Via L. Ministeri 23</a></li>
+                <li><a href="tel:+393276933691">Modica &mdash; prossima apertura</a></li>
+                <li><a href="tel:+393276933691">+39 327 693 3691</a></li>
+                <li><a href="mailto:mercaticolaiannioutletig@gmail.com">Scrivi per email</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Informazioni</h3>
+            <ul>
+                <li><a href="#buono">Come funziona il Buono</a></li>
+                <li><a href="tel:+393276933691">Diventa Convenzionato</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 Noi Outlet &mdash; evoluzione di Riesi Outlet. Tutti i diritti riservati.</span>
+        <span><em>Compri da noi, investi nel territorio.</em></span>
+    </div>
+</footer>
+
+<script src="components.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Nostro Mondo | NOI OUTLET</title>
+    <meta name="description" content="Scopri la filosofia NOI OUTLET: sartoria su misura, esperienze in store e il mondo dell'eccellenza italiana.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .mondo-hero { height: 60vh; position: relative; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff; overflow:hidden; }
+        .mondo-hero img { position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.5);z-index:0; }
+        .mondo-hero-content { position:relative;z-index:1; padding:0 40px; }
+        .mondo-hero-content h1 { font-size:clamp(32px,5vw,60px);letter-spacing:6px;text-transform:uppercase;font-weight:400;margin-bottom:16px; }
+        .mondo-hero-content p { font-size:14px;max-width:600px;margin:0 auto;opacity:.8;line-height:1.8; }
+        .mondo-section { display:grid;grid-template-columns:1fr 1fr;min-height:540px; }
+        .mondo-section.reverse { direction:rtl; }
+        .mondo-section.reverse > * { direction:ltr; }
+        .mondo-img { overflow:hidden; }
+        .mondo-img img { width:100%;height:100%;object-fit:cover;transition:transform .7s ease; }
+        .mondo-img:hover img { transform:scale(1.04); }
+        .mondo-text { display:flex;flex-direction:column;justify-content:center;padding:80px 60px; background:#fff; }
+        .mondo-text .tag { font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#888;margin-bottom:24px; }
+        .mondo-text h2 { font-family:var(--font-serif);font-size:clamp(28px,3vw,42px);font-weight:400;margin-bottom:20px;line-height:1.2; }
+        .mondo-text p { font-size:14px;line-height:1.9;color:#555;margin-bottom:32px; }
+        .mondo-text a { display:inline-block;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border-bottom:1px solid #000;padding-bottom:4px;transition:opacity .3s; }
+        .mondo-text a:hover { opacity:.6; }
+        @media(max-width:768px){.mondo-section,.mondo-section.reverse{grid-template-columns:1fr;direction:ltr;}.mondo-img{height:300px;}.mondo-text{padding:48px 24px;}}
+    </style>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <div class="mondo-hero">
+        <img src="images/hero.jpg" alt="Il Nostro Mondo">
+        <div class="mondo-hero-content">
+            <h1>IL NOSTRO MONDO</h1>
+            <p>L'eccellenza artigiana si incontra con il design contemporaneo. Un universo dove ogni dettaglio racconta una storia di passione e dedizione.</p>
+        </div>
+    </div>
+
+    <!-- Su Misura -->
+    <div id="su-misura" class="mondo-section">
+        <div class="mondo-img">
+            <img src="images/srv1.jpg" alt="Su Misura">
+        </div>
+        <div class="mondo-text">
+            <span class="tag">Personalizzazione</span>
+            <h2>Il Mondo della Sartoria Su Misura</h2>
+            <p>Ogni capo su misura NOI OUTLET è il risultato di un dialogo intimo tra il sarto e il cliente. Dalla scelta del tessuto — selezionato tra le migliori lane, sete e cashmere mondiali — alla definizione delle misure con oltre 30 punti di rilevazione.</p>
+            <p>Il risultato è un abito che appartiene solo a te, costruito attorno alla tua silhouette e alla tua personalità.</p>
+            <a href="account.html">Prenota una Consulenza</a>
+        </div>
+    </div>
+
+    <!-- Prova in Store -->
+    <div id="store" class="mondo-section reverse">
+        <div class="mondo-img">
+            <img src="images/srv2.jpg" alt="Prova in Store">
+        </div>
+        <div class="mondo-text">
+            <span class="tag">Esperienza in Boutique</span>
+            <h2>Prenota la Tua Visita in Boutique</h2>
+            <p>La nostra boutique è uno spazio costruito per accoglierti in modo esclusivo. Un personal shopper dedicato ti guiderà attraverso le ultime collezioni, aiutandoti a costruire il guardaroba perfetto.</p>
+            <p>Prenota il tuo appuntamento privato e vivi un'esperienza d'acquisto senza uguali, nella totale discrezione e nella massima cura.</p>
+            <a href="account.html">Prenota Ora</a>
+        </div>
+    </div>
+
+    <!-- Styling -->
+    <div id="styling" class="mondo-section">
+        <div class="mondo-img">
+            <img src="images/srv3.jpg" alt="Styling">
+        </div>
+        <div class="mondo-text">
+            <span class="tag">Servizio Styling</span>
+            <h2>Il Tuo Personal Stylist Dedicato</h2>
+            <p>Il nostro servizio di styling personalizzato ti offre l'accesso a un consulente di immagine che conosce profondamente le tendenze e soprattutto te. Analizziamo il tuo stile di vita, le tue esigenze lavorative e i tuoi gusti per creare un'identità visiva coerente e raffinata.</p>
+            <a href="account.html">Scopri il Servizio</a>
+        </div>
+    </div>
+
+    <!-- Newsletter inline -->
+    <section class="newsletter-section">
+        <h2 class="newsletter-title">RIMANI AGGIORNATO</h2>
+        <p class="newsletter-desc">Iscriviti alla newsletter e non perdere eventi esclusivi, aperture ed edizioni limitate.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault();this.querySelector('input').value='';this.querySelector('input').placeholder='Grazie! ✓';this.querySelector('input').disabled=true;">
+            <input type="email" placeholder="Inserisci il tuo indirizzo e-mail" required>
+            <button type="submit"><i class="ph ph-caret-right"></i></button>
+        </form>
+    </section>
+
+    <div id="site-footer"></div>
+    <script src="components.js"></script>
+</body>
+</html>

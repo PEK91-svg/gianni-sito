@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready to Wear | NOI OUTLET</title>
+    <meta name="description" content="Abbigliamento ready to wear per l'uomo contemporaneo. Scopri i look della nuova stagione.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <div class="page-hero">
+        <img src="images/srv1.jpg" alt="Ready to Wear">
+        <div class="page-hero-content">
+            <p>Stagione SS 2026</p>
+            <h1>READY TO WEAR</h1>
+        </div>
+    </div>
+
+    <div class="filter-bar">
+        <div class="filter-bar-left">
+            <button class="filter-btn active">Tutti</button>
+            <button class="filter-btn">Look Formale</button>
+            <button class="filter-btn">Look Casual</button>
+            <button class="filter-btn">Cerimonia</button>
+        </div>
+        <div class="filter-bar-right">18 prodotti</div>
+    </div>
+
+    <div class="products-grid">
+        <div class="product-item"><div class="product-item-img"><img src="images/srv2.jpg" alt="Abito Completo Grigio"><span class="product-item-badge">Nuovo</span><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">Abito Completo Grigio</p><p class="product-item-desc">Lana Super 150's</p><div class="product-item-price"><span>€ 4.200</span></div></div></div>
+        <div class="product-item"><div class="product-item-img"><img src="images/srv3.jpg" alt="Blazer Dinner"><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">Blazer Dinner</p><p class="product-item-desc">Seta e Lana</p><div class="product-item-price"><span>€ 3.100</span></div></div></div>
+        <div class="product-item"><div class="product-item-img"><img src="images/hero.jpg" alt="Trench Primavera"><span class="product-item-badge sale">-10%</span><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">Trench Primavera</p><p class="product-item-desc">Misto Cotone</p><div class="product-item-price"><span class="price-original">€ 2.800</span><span class="price-sale">€ 2.520</span></div></div></div>
+        <div class="product-item"><div class="product-item-img"><img src="images/prod1.jpg" alt="Completo Marrone"><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">Completo Marrone</p><p class="product-item-desc">Tweed di Lana</p><div class="product-item-price"><span>€ 3.900</span></div></div></div>
+        <div class="product-item"><div class="product-item-img"><img src="images/prod2.jpg" alt="Giacca Monopetto"><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">Giacca Monopetto</p><p class="product-item-desc">Flanella Grigia</p><div class="product-item-price"><span>€ 2.400</span></div></div></div>
+        <div class="product-item"><div class="product-item-img"><img src="images/prod3.jpg" alt="Abito Blu Navy"><span class="product-item-badge">Esclusivo</span><div class="product-item-actions"><button aria-label="Wishlist"><i class="ph ph-heart"></i></button><button aria-label="Aggiungi al carrello"><i class="ph ph-tote"></i></button></div></div><div class="product-item-info"><p class="product-item-name">Abito Blu Navy</p><p class="product-item-desc">Lana Finissima</p><div class="product-item-price"><span>€ 4.600</span></div></div></div>
+    </div>
+
+    <div id="site-footer"></div>
+    <script src="components.js"></script>
+    <script>document.querySelectorAll('.filter-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');});});</script>
+</body>
+</html>
